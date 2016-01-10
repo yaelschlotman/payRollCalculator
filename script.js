@@ -27,7 +27,7 @@ function showWeeklyPay() {
         console.log("Total Pay:\t$", basePay);
 
     }else if (hoursPerWeek >40) {
-        basePay = (hoursPerWeek - 40) * rate;
+        basePay = hoursPerWeek * rate;
         overtimePay = (hoursPerWeek -40) * 1.5 * rate;
         totalPay = basePay + overtimePay;
         console.log("Employee:  \t", employeeName);
